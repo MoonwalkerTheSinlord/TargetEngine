@@ -106,10 +106,7 @@ int main()
 	// Main game loop
 	while (!WindowShouldClose()) { // Detect window close button or ESC key
 
-
-		//std::clock_t c_start = std::clock();
-		//auto t_start = std::chrono::high_resolution_clock::now();
-		//cout << "Update!" << endl;
+		//Just found a sweet-spot where it less lightly to lag.
 		for (int i = 0; i < 8; i++)
 		{
 			success = Consumer.recv(&comInfo, &comMesh, &comLight, &comCamera, &comTransform, &comMaterial, &comDelete, &comNameChange, sizeBoi);
